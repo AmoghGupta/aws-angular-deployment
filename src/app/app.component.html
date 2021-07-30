@@ -2,3 +2,10 @@
 <div>Made some updates to project.</div>
 
 <div>Deploying new code</div>
+
+
+<ul *ngIf="courses$ | async as courses">
+  <li *ngFor="let course of courses">
+      {{course.description}}
+  </li>
+</ul>
